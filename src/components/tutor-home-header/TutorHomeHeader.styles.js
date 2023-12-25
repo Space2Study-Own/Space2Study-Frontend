@@ -14,7 +14,8 @@ export const styles = {
   },
   searchBox: {
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginTop: '20px'
   },
   description: {
     display: 'block',

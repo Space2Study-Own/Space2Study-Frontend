@@ -8,6 +8,7 @@ import PageWrapper from '~/components/page-wrapper/PageWrapper'
 import { styles } from '~/pages/tutor-home/TutorHome.styles'
 import UserStepsWrapper from '~/components/user-steps-wrapper/UserStepsWrapper'
 import TutorHomeHeader from '~/components/tutor-home-header/TutorHomeHeader'
+import PopularCategories from '~/components/popular-categories/PopularCategories'
 
 const TutorHome = () => {
   const { openModal } = useModalContext()
@@ -27,6 +28,7 @@ const TutorHome = () => {
   return (
     <PageWrapper data-testid='tutorHome'>
       <TutorHomeHeader />
+      <PopularCategories />
     </PageWrapper>
   )
 }

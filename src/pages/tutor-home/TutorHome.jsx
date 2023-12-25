@@ -7,6 +7,7 @@ import PageWrapper from '~/components/page-wrapper/PageWrapper'
 
 import { styles } from '~/pages/tutor-home/TutorHome.styles'
 import UserStepsWrapper from '~/components/user-steps-wrapper/UserStepsWrapper'
+import TutorHomeHeader from '~/components/tutor-home-header/TutorHomeHeader'
 
 const TutorHome = () => {
   const { openModal } = useModalContext()
@@ -23,7 +24,11 @@ const TutorHome = () => {
     }
   }, [openModal, isFirstLogin, userRole])
 
-  return <PageWrapper data-testid='tutorHome'>TutorHome Page</PageWrapper>
+  return (
+    <PageWrapper data-testid='tutorHome'>
+      <TutorHomeHeader />
+    </PageWrapper>
+  )
 }
 
 export default TutorHome
